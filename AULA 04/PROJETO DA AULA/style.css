@@ -1,0 +1,55 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial;
+}
+
+.container {
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  background-color: darkblue;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+form input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
