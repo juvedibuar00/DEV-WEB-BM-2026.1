@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav com Flexbox - Simplificado</title>
+    <style>
+        nav {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+        
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* SELECIONA APENAS o último link (Contato) */
+        nav a:last-child {
+            margin-left: auto;    /* EMPURRA para a direita */
+            margin-right: 0;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </nav>
+
+</body>
+</html>
+
