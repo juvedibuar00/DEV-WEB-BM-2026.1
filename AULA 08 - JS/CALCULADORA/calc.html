@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Operações aritméticas</h1>
+    
+    <input type="number" id="n1" placeholder="Número 1">
+    <input type="number" id="n2" placeholder="Número 2">
+    
+    <br><br>
+    
+    <button onclick="somar()">➕ Soma</button>
+    <button onclick="subtrair()">➖ Subtração</button>
+    <button onclick="multiplicar()">✖️ Multiplicação</button>
+    <button onclick="dividir()">➗ Divisão</button>
+    
+    <h2 id="resultado"></h2>
+
+    <script>
+        function somar() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            document.getElementById("resultado").innerHTML = a + " + " + b + " = " + (a + b);
+        }
+        
+        function subtrair() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            document.getElementById("resultado").innerHTML = a + " - " + b + " = " + (a - b);
+        }
+        
+        function multiplicar() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            document.getElementById("resultado").innerHTML = a + " × " + b + " = " + (a * b);
+        }
+        
+        function dividir() {
+            let a = Number(document.getElementById("n1").value);
+            let b = Number(document.getElementById("n2").value);
+            
+            if (b === 0) {
+                document.getElementById("resultado").innerHTML = "❌ Não dá para dividir por zero!";
+            } else {
+                document.getElementById("resultado").innerHTML = a + " ÷ " + b + " = " + (a / b);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS - Estilo */
+        .destaque {
+            background-color: rgb(169, 17, 32);
+            padding: 10px;
+            /* padding: auto; */
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+<body>
+    <!-- HTML - Estrutura -->
+    <h1>Site Interativo</h1>
+    <button onclick="mudarTexto()">Clique aqui</button>
+    <p id="mensagem">Texto original</p>
+    <!-- JavaScript - Comportamento -->
+    <script>
+        function mudarTexto() {
+            let paragrafo = document.getElementById("mensagem");
+            paragrafo.innerHTML = "Você clicou!";
+            paragrafo.className = "destaque";
+        }
+    </script>
+</body>
+</html>
+
+
